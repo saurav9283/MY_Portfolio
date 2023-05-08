@@ -6,6 +6,7 @@ import projImg3 from "../assets/img/drum.png";
 import projImg4 from "../assets/img/pin.png";
 import projImg5 from "../assets/img/front.png";
 import dashboard from "../assets/img/dashboard.png";
+import recipes from "../assets/img/recipes.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
@@ -32,6 +33,13 @@ export const Projects = () => {
       imgUrl: projImg1,
       link: "https://flix-clone-swart.vercel.app/"
       
+    },
+    {
+      title: "Recipes-Website",
+      description: "Using React, NodeJS",
+      imgUrl: recipes,
+      link: "https://recipe-frontend-peach.vercel.app/"
+
     },
     {
       title: "Travel Planning Website",
