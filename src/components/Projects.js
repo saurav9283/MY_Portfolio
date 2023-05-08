@@ -5,37 +5,52 @@ import projImg2 from "../assets/img/travel.png";
 import projImg3 from "../assets/img/drum.png";
 import projImg4 from "../assets/img/pin.png";
 import projImg5 from "../assets/img/front.png";
+import dashboard from "../assets/img/dashboard.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
+import { Link } from "react-router-dom";
 
 export const Projects = () => {
-
+  
   const projects = [
+    {
+      title: "Portfolio",
+      description: "HTML, CSS, JavaScript, ReactJS",
+      imgUrl: projImg5,
+      link: "https://my-portfolio-sage-zeta.vercel.app/"
+    },
     {
       title: "Netflix-Clon",
       description: "Using React.JS",
       imgUrl: projImg1,
+      link: "https://flix-clone-swart.vercel.app/"
+      
+    },
+    {
+      title: "Dashboard",
+      description: "HTML, CSS, JavaScript,Bootstrap, ReactJS",
+      imgUrl: dashboard,
+      link: "https://listed-dashboard-blush.vercel.app/"
     },
     {
       title: "Travel Planning Website",
       description: "Using HTML, CSS, JavaScript",
       imgUrl: projImg2,
+      link: "https://saurav9283.github.io/traveleasy/"
+
     },
     {
       title: "DrumKit",
       description: "Using HTML, CSS, JavaScript",
       imgUrl: projImg3,
+      link: "https://saurav9283.github.io/Drumkit/"
+
     },
     {
       title: "PinDog",
       description: "Using HTML, CSS, JavaScript",
       imgUrl: projImg4,
-    },
-    {
-      title: "Portfolio",
-      description: "HTML, CSS, JavaScript, ReactJS",
-      imgUrl: projImg5,
     },
     // {
     //   title: "Business Startup",

@@ -1,9 +1,10 @@
 import { useState, useEffect } from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, Button } from "react-bootstrap";
 import headerImg from "../assets/img/header-img.svg";
 import { ArrowRightCircle } from 'react-bootstrap-icons';
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
+
 
 
 export const Banner = () => {
@@ -59,16 +60,22 @@ export const Banner = () => {
             <TrackVisibility>
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-                <span className="tagline">Welcome to my Portfolio</span>
+                {/* <span className="tagline">Welcome to my Portfolio</span> */}
                 <h1>{`Hi! I'm Saurav,`} <span className="txt-rotate" dataPeriod="800" data-rotate='[ "Software Developer", "Web Developer", "Data Analytics" ]'><span className="wrap">{text}</span></span></h1>
-                <p>Hi! My name is Saurav Kumar. I am a Software Developer Engineer. I am extremely motivated to constantly 
+                {/* <Button >More About Me</Button> */}
+                {/* <button className="ddc">More About Me</button> */}
+                
+               
+                {/* <p>Hi! My name is Saurav Kumar. I am a Software Developer Engineer. I am extremely motivated to constantly 
                   develop my skills and grow professionally. I am confident in my ability to have growth oriented and challenging
                    career where I can contribute my knowledge and skills to the organization and enhance my experience through 
                    continuous learning and teamwork.<br/>
-                   Currently I am pursuing my B.Tech (2020-2024) from Lovely Professional University, Phagwara in Computer Science Engineering. Additional to that I have completed many courses related to major technology to improve my skillset and working on projects to showcase them.</p>
+                   Currently I am pursuing my B.Tech (2020-2024) from Lovely Professional University, Phagwara in Computer Science Engineering. Additional to that I have completed many courses related to major technology to improve my skillset and working on projects to showcase them.</p> */}
                    {/* <HashLink to='#connect'> */}
                       {/* <button className="vvd"><span>Let’s Connect</span></button> */}
-                      <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button>
+                      {/* <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button> */}
+                      <button>More About Me <ArrowRightCircle size={20} /></button>
+
                    {/* </HashLink> */}
                    {/* onClick={() => onUpdateActiveLink('home')} */}
               </div>}

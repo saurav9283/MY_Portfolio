@@ -22,6 +22,7 @@
   box-sizing: border-box;
 }
 
+
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 75px;
@@ -68,7 +69,7 @@ input:focus, textarea:focus, select:focus {
 }
 
 @media (min-width:1700px) {
-	main .container {
+  main .container {
 		max-width: 100%;
 		padding: 0 150px;
 	}
@@ -99,16 +100,16 @@ nav.navbar a.navbar-brand {
 }
 nav.navbar .navbar-nav .nav-link.navbar-link {
   font-weight: 400;
-  color: #fff !important;
+  color: #fff ; /* !important */
   letter-spacing: 0.8px;
   padding: 0 25px;
   font-size: 18px;
   opacity: 0.75;
 }
-nav.navbar .navbar-nav a.nav-link.navbar-link:hover,
+/* nav.navbar .navbar-nav a.nav-link.navbar-link:hover,
 nav.navbar .navbar-nav a.nav-link.navbar-link.active {
     opacity: 1;
-}
+} */
 span.navbar-text {
   margin-bottom: 15px;
     display: flex;
@@ -122,7 +123,7 @@ span.navbar-text {
 .social-icon a {
     width: 42px;
     height: 42px;
-    background: rgba(217, 217, 217, 0.1);
+    background-color:rgba(61, 54, 54, 0.5);
     display: inline-flex;
     border-radius: 50%;
     margin-right: 6px;
@@ -236,13 +237,13 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 /************ Banner Css ************/
 .banner {
   margin-top: 0;
-  padding: 260px 0 100px 0;
+  padding: 260px 0 40px 0;
   background-image: url('./assets/img/banner-bg.png');
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
 }
-.banner .tagline {
+.banner .tagline{
   font-weight: 700;
   letter-spacing: 0.8px;
   padding: 8px 10px;
@@ -260,13 +261,16 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin-bottom: 20px;
   display: block;
 }
-.banner p {
+.ddb{
+  background-color: #8064A2 !important;
+}
+/* .banner p {
   color: #B8B8B8;
   font-size: 18px;
   letter-spacing: 0.8px;
   line-height: 1.5em;
   width: 96%;
-}
+} */
 .banner button {
   color: #fff;
   font-weight: 700;
@@ -286,6 +290,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin-left: 25px;
 }
 .banner img {
+  margin-top: -100px;
   animation: updown 3s linear infinite;
 }
 @keyframes updown {
@@ -315,10 +320,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   padding: 60px 50px;
   margin-top: 60px;
 }
-.skill h2 {
+/* .skill h2 {
 	font-size: 45px;
 	font-weight: 700;
-}
+} */
 .skill p {
     color: #B8B8B8;
     font-size: 18px;
@@ -428,6 +433,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   height: 100%;
 }
 .proj-txtx {
+  color: white;
   position: absolute;
   text-align: center;
   top: 65%;
@@ -613,4 +619,12 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   color: #B8B8B8;
   letter-spacing: 0.5px;
   margin-top: 20px;
+}
+
+.dda{
+  border: 1px solid white;
+  font-weight: bold;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 20px;
 }
