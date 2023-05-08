@@ -21,17 +21,17 @@ export const Projects = () => {
       link: "https://my-portfolio-sage-zeta.vercel.app/"
     },
     {
+      title: "Dashboard",
+      description: "HTML, CSS, JavaScript,Bootstrap, ReactJS",
+      imgUrl: dashboard,
+      link: "https://listed-dashboard-blush.vercel.app/"
+    },
+    {
       title: "Netflix-Clon",
       description: "Using React.JS",
       imgUrl: projImg1,
       link: "https://flix-clone-swart.vercel.app/"
       
-    },
-    {
-      title: "Dashboard",
-      description: "HTML, CSS, JavaScript,Bootstrap, ReactJS",
-      imgUrl: dashboard,
-      link: "https://listed-dashboard-blush.vercel.app/"
     },
     {
       title: "Travel Planning Website",
