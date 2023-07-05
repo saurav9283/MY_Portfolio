@@ -16,6 +16,20 @@ export const Projects = () => {
   
   const projects = [
     {
+      title: "Recipes-Website",
+      description: "Using React, NodeJS",
+      imgUrl: recipes,
+      link: "https://recipe-frontend-peach.vercel.app/"
+
+    },
+    {
+      title: "Netflix-Clon",
+      description: "Using React.JS",
+      imgUrl: projImg1,
+      link: "https://flix-clone-swart.vercel.app/"
+      
+    },
+    {
       title: "Portfolio",
       description: "HTML, CSS, JavaScript, ReactJS",
       imgUrl: projImg5,
@@ -26,20 +40,6 @@ export const Projects = () => {
       description: "HTML, CSS, JavaScript,Bootstrap, ReactJS",
       imgUrl: dashboard,
       link: "https://listed-dashboard-blush.vercel.app/"
-    },
-    {
-      title: "Netflix-Clon",
-      description: "Using React.JS",
-      imgUrl: projImg1,
-      link: "https://flix-clone-swart.vercel.app/"
-      
-    },
-    {
-      title: "Recipes-Website",
-      description: "Using React, NodeJS",
-      imgUrl: recipes,
-      link: "https://recipe-frontend-peach.vercel.app/"
-
     },
     {
       title: "Travel Planning Website",
