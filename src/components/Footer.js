@@ -21,8 +21,8 @@ export const Footer = () => {
           <Col size={8} sm={8} style={{marginTop:"20px"}}>
             <img src={logo1} alt="Logo1" onClick={cvdownload} />
           </Col>
-          <Col size={12} sm={6} className="text-center text-sm-end" style={{marginLeft:"550px" , marginTop:"-55px"}}>
-            <div className="social-icon">
+          <Col size={12} sm={6} className="text-center">
+            <div className="social-icon2">
               <a href="https://www.linkedin.com/in/saurav-kumar-1883971b6/" target="_blank" rel="noopener noreferrer"><img src={navIcon1} alt="Icon" /></a>
               <a href="https://github.com/saurav9283" target="_blank" rel="noopener noreferrer"><img src={navIcon2} alt="Icon" /></a>
               <a href="https://www.instagram.com/saurav9283/" target="_blank" rel="noopener noreferrer"><img src={navIcon3} alt="Icon" /></a>

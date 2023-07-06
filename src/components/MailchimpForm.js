@@ -6,10 +6,7 @@ export const MailchimpForm = () => {
 
   return (
     <>
-      <MailchimpSubscribe
-        url={postUrl}
-        
-        />
+      <MailchimpSubscribe url={postUrl} />
     </>
-  )
-}
+  );
+};
