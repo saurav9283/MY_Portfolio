@@ -250,9 +250,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   background-image: url("./assets/img/banner-bg.png");
   background-position: top center;
   background-size: cover;
-  background-repeat: no-repeat;
+  /* background-repeat: no-repeat; */
 }
-.banner .tagline {
+/* .banner .tagline {
   font-weight: 700;
   letter-spacing: 0.8px;
   padding: 8px 10px;
@@ -265,7 +265,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-size: 20px;
   margin-bottom: 16px;
   display: inline-block;
-}
+} */
 .banner h1 {
   font-size: 65px;
   font-weight: 700;
@@ -274,15 +274,15 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin-bottom: 20px;
   display: block;
 }
-.ddb {
+/* .ddb {
   background-color: #8064a2 !important;
-}
+} */
 
 .banner button {
   color: #fff;
   font-weight: 700;
   font-size: 20px;
-  margin-top: 60px;
+  margin-top: 50px;
   letter-spacing: 0.8px;
   display: flex;
   align-items: center;
@@ -290,7 +290,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .banner button svg {
   font-size: 25px;
   margin-left: 10px;
-  transition: 0.3s ease-in-out;
+  transition: 0.2s ease-in-out;
   line-height: 1;
 }
 .banner button:hover svg {
@@ -571,7 +571,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .text-center{
   margin-left: 600px;
 }
-@media (min-width: 250px) and (max-width: 500px) {
+@media (min-width: 200px) and (max-width: 500px) {
   .text-center {
     margin-left: 160px;
   }
