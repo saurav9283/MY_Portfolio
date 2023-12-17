@@ -5,6 +5,7 @@ import projImg2 from "../assets/img/travel.png";
 import projImg3 from "../assets/img/drum.png";
 import projImg4 from "../assets/img/pin.png";
 import projImg5 from "../assets/img/front.png";
+import hotel from "../assets/img/hotel.png";
 import dashboard from "../assets/img/dashboard.png";
 import recipes from "../assets/img/recipes.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
@@ -20,6 +21,13 @@ export const Projects = () => {
       description: "Using React, NodeJS",
       imgUrl: recipes,
       link: "https://recipe-frontend-peach.vercel.app/"
+
+    },
+    {
+      title: "Hotel-Hangout",
+      description: "Using React,NodeJS,Mongodb",
+      imgUrl: hotel,
+      link: "https://hotel-ui-gamma.vercel.app/"
 
     },
     {

@@ -1,89 +1,36 @@
-import { useState, useEffect } from "react";
-import { Container, Row, Col, Button } from "react-bootstrap";
-import headerImg from "../assets/img/header-img.svg";
-import { ArrowRightCircle } from "react-bootstrap-icons";
-import "animate.css";
-import TrackVisibility from "react-on-screen";
+import React, { useState } from 'react';
+import { Container, Row, Col, Button } from 'react-bootstrap';
+import headerImg from '../assets/img/header-img.svg';
+import { ArrowRightCircle } from 'react-bootstrap-icons';
+import 'animate.css';
+import TrackVisibility from 'react-on-screen';
+import Pop from './Pop';
 
 export const Banner = () => {
-  const [loopNum, setLoopNum] = useState(0);
-  const [isDeleting, setIsDeleting] = useState(false);
-  const [text, setText] = useState("");
-  const [delta, setDelta] = useState(300 - Math.random() * 100);
-  const [index, setIndex] = useState(1);
-  const [activeLink, setActiveLink] = useState("contact");
-  // const toRotate = ["Software Developer"];
-  const [showpopup, setshowpopup] = useState(false);
-  const period = 2000;
+  const [showModel, setShowModel] = useState(false);
 
-  function handelPopup() {
-    setshowpopup(true);
-  }
-
-  useEffect(() => {
-    let ticker = setInterval(() => {
-      tick();
-    }, delta);
-
-    return () => {
-      clearInterval(ticker);
-    };
-  }, [text]);
-
-  const tick = () => {
-    // let i = loopNum % toRotate.length;
-    // let fullText = toRotate[i];
-    // let updatedText = isDeleting
-      // ? fullText.substring(0, text.length - 1)
-      // : fullText.substring(0, text.length + 1);
-
-    // setText(updatedText);
-
-    if (isDeleting === true) {
-      setDelta((prevDelta) => prevDelta / 2);
-    }
-
-    // if (isDeleting === false && updatedText === fullText) {
-    //   setIsDeleting(true);
-    //   setIndex((prevIndex) => prevIndex - 1);
-    //   setDelta(period);
-    // } else if (isDeleting && updatedText === "") {
-    //   setIsDeleting(false);
-    //   setLoopNum(loopNum + 1);
-    //   setIndex(1);
-    //   setDelta(500);
-    // } else {
-    //   setIndex((prevIndex) => prevIndex + 1);
-    // }
+  const toggleModel = () => {
+    setShowModel(!showModel);
   };
 
   return (
     <section className="banner" id="home">
       <Container>
-        <Row className="aligh-items-center">
+        <Row className="align-items-center">
           <Col>
             <TrackVisibility>
               {({ isVisible }) => (
-                <div
-                  // className={
-                  //   isVisible ? "animate__animated animate__fadeIn" : ""
-                  // }
-                >
+                <div>
                   <h1>
-                    {/* {`Hi! I'm Saurav,`}{""} */}
-                    {`Hi! I'm Saurav,`}<br/>
+                    Hi! I'm Saurav,
+                    <br />
                     Software Developer
-                    {/* <span
-                      className="txt-rotate"
-                      dataperiod="800"
-                      data-rotate='[ "Software Developer"]'
-                    >
-                      <span className="wrap">{text}</span>
-                    </span> */}
                   </h1>
-                  <button onClick={handelPopup}>
+                  <button onClick={toggleModel}>
                     More About Me <ArrowRightCircle size={20} />
                   </button>
+                  {showModel && <Pop />}
+                  {/* <Pop  isOpen={showModel} toggleModal={toggleModel}/> */}
                 </div>
               )}
             </TrackVisibility>
@@ -93,7 +40,7 @@ export const Banner = () => {
               {({ isVisible }) => (
                 <div
                   className={
-                    isVisible ? "animate__animated animate__zoomIn" : ""
+                    isVisible ? 'animate__animated animate__zoomIn' : ''
                   }
                 >
                   <img src={headerImg} alt="Header Img" />
@@ -103,6 +50,21 @@ export const Banner = () => {
           </Col>
         </Row>
       </Container>
+
+      {/* CSS styles for the Pop component */}
+      <style jsx>{`
+        .popup {
+          position: fixed;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          background-color: white;
+          padding: 20px;
+          border-radius: 8px;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+          z-index: 9999;
+        }
+      `}</style>
     </section>
   );
 };
